@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="103" width="430" height="795"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="P4s-bf-XAp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="urunlerHucre" id="P4s-bf-XAp" customClass="UrunlerHucre" customModule="ProductsApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="430" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P4s-bf-XAp" id="eF4-HX-1z5">
@@ -56,6 +56,9 @@
                                                                     <rect key="frame" x="0.0" y="86" width="128" height="40.333333333333343"/>
                                                                     <state key="normal" title="Button"/>
                                                                     <buttonConfiguration key="configuration" style="filled" title="SEPETE EKLE"/>
+                                                                    <connections>
+                                                                        <action selector="buttonSepeteEkle:" destination="P4s-bf-XAp" eventType="touchUpInside" id="z4A-zM-tuH"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -76,6 +79,12 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="7I9-zc-bJ2" secondAttribute="trailing" id="zmq-p8-a4X"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hucreArkaplan" destination="7I9-zc-bJ2" id="Y3A-UY-VVi"/>
+                                            <outlet property="labelUrunad" destination="ft3-Z0-Dgb" id="bOv-lz-LZY"/>
+                                            <outlet property="labelUrunfiyat" destination="xtj-jk-qgk" id="Ap1-um-32e"/>
+                                            <outlet property="ımageViewUrun" destination="uc8-HJ-Hlh" id="uxN-Y5-dK8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

@@ -15,6 +15,7 @@
 		1E53FA5F2CB6CA3E004FDA8D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1E53FA5E2CB6CA3E004FDA8D /* Base */; };
 		1E53FA672CB6CAA5004FDA8D /* products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53FA662CB6CAA5004FDA8D /* products.swift */; };
 		1E53FA692CB6CC6F004FDA8D /* DetaySayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53FA682CB6CC6F004FDA8D /* DetaySayfa.swift */; };
+		1E53FA6D2CB6E5A0004FDA8D /* UrunlerHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53FA6C2CB6E5A0004FDA8D /* UrunlerHucre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1E53FA602CB6CA3E004FDA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E53FA662CB6CAA5004FDA8D /* products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = products.swift; sourceTree = "<group>"; };
 		1E53FA682CB6CC6F004FDA8D /* DetaySayfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaySayfa.swift; sourceTree = "<group>"; };
+		1E53FA6C2CB6E5A0004FDA8D /* UrunlerHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunlerHucre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				1E53FA562CB6CA3C004FDA8D /* Anasayfa.swift */,
 				1E53FA682CB6CC6F004FDA8D /* DetaySayfa.swift */,
 				1E53FA662CB6CAA5004FDA8D /* products.swift */,
+				1E53FA6C2CB6E5A0004FDA8D /* UrunlerHucre.swift */,
 				1E53FA582CB6CA3C004FDA8D /* Main.storyboard */,
 				1E53FA5B2CB6CA3E004FDA8D /* Assets.xcassets */,
 				1E53FA5D2CB6CA3E004FDA8D /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				1E53FA572CB6CA3C004FDA8D /* Anasayfa.swift in Sources */,
 				1E53FA672CB6CAA5004FDA8D /* products.swift in Sources */,
 				1E53FA532CB6CA3C004FDA8D /* AppDelegate.swift in Sources */,
+				1E53FA6D2CB6E5A0004FDA8D /* UrunlerHucre.swift in Sources */,
 				1E53FA692CB6CC6F004FDA8D /* DetaySayfa.swift in Sources */,
 				1E53FA552CB6CA3C004FDA8D /* SceneDelegate.swift in Sources */,
 			);
