@@ -36,6 +36,7 @@ class Anasayfa: UIViewController {
         urunlerListesi.append(u6)
         urunlerListesi.append(u7)
         
+        urunlerTableView.separatorColor = UIColor(white: 0.95, alpha: 1)
     }
 }
     
@@ -53,6 +54,7 @@ class Anasayfa: UIViewController {
             hucre.labelUrunfiyat.text = "\(urun.fiyat!) ₺"
             
             hucre.backgroundColor = UIColor(white: 0.95, alpha: 1)
+            hucre.hucreArkaplan.layer.cornerRadius = 10.0
             
             
             
