@@ -17,6 +17,10 @@ class Anasayfa: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        urunlerTableView.delegate = self
+        urunlerTableView.dataSource = self
+        
+        
         let u1 = urunler(ıd: 1 , ad: "Macbook Pro 14", resim : "bilgisayar",fiyat: 43000)
         let u2 = urunler(ıd: 2 , ad: "Rayban Club Master", resim : "gozluk",fiyat: 2500)
         let u3 = urunler(ıd: 3 , ad: "Sony ZX Series", resim : "kulaklik",fiyat: 40000)
