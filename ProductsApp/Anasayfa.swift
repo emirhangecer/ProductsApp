@@ -52,6 +52,8 @@ class Anasayfa: UIViewController {
             hucre.labelUrunad.text = urun.ad
             hucre.labelUrunfiyat.text = "\(urun.fiyat!) ₺"
             
+            hucre.backgroundColor = UIColor(white: 0.95, alpha: 1)
+            
             
             
             return hucre
