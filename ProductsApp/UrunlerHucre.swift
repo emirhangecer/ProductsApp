@@ -13,6 +13,8 @@ class UrunlerHucre: UITableViewCell {
     @IBOutlet weak var labelUrunad: UILabel!
     @IBOutlet weak var ımageViewUrun: UIImageView!
     @IBOutlet weak var hucreArkaplan: UIView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,9 +9,12 @@ import UIKit
 
 class Anasayfa: UIViewController {
 
+    @IBOutlet weak var urunlerTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+     
     }
 
 
