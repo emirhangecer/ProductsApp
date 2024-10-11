@@ -40,28 +40,41 @@ class Anasayfa: UIViewController {
     }
 }
     
-    extension Anasayfa : UITableViewDelegate , UITableViewDataSource {
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return urunlerListesi.count
-        }
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let urun = urunlerListesi[indexPath.row]
-            
-            let hucre = tableView.dequeueReusableCell(withIdentifier: "urunlerHucre") as! UrunlerHucre
-            
-            hucre.ımageViewUrun.image = UIImage(named: urun.resim!)
-            hucre.labelUrunad.text = urun.ad
-            hucre.labelUrunfiyat.text = "\(urun.fiyat!) ₺"
-            
-            hucre.backgroundColor = UIColor(white: 0.95, alpha: 1)
-            hucre.hucreArkaplan.layer.cornerRadius = 10.0
-            
-            
-            
-            return hucre
-        }
+extension Anasayfa : UITableViewDelegate , UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return urunlerListesi.count
     }
-
-
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let urun = urunlerListesi[indexPath.row]
+        
+        let hucre = tableView.dequeueReusableCell(withIdentifier: "urunlerHucre") as! UrunlerHucre
+        
+        hucre.ımageViewUrun.image = UIImage(named: urun.resim!)
+        hucre.labelUrunad.text = urun.ad
+        hucre.labelUrunfiyat.text = "\(urun.fiyat!) ₺"
+        
+        hucre.backgroundColor = UIColor(white: 0.95, alpha: 1)
+        hucre.hucreArkaplan.layer.cornerRadius = 10.0
+        
+        
+        
+        return hucre
+    }
+    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let urun = urunlerListesi[indexPath.row]
+        
+        let silAction = UIContextualAction(style: .destructive, title: "Sil"){
+            contextualAction, view, bool in
+            print("\(urun.ad!) silindi")
+        }
+        let duzenleAction = UIContextualAction(style: .normal, title: "Düzenle"){
+            contextualAction, view, bool in
+            print("\(urun.ad!) Düzenlendi")
+        }
+        return UISwipeActionsConfiguration(actions: [silAction,duzenleAction])
+    }
+    
+}
 
 
