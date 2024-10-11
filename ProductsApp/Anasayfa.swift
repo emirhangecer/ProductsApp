@@ -58,6 +58,8 @@ extension Anasayfa : UITableViewDelegate , UITableViewDataSource {
         
         
         
+        
+        
         return hucre
     }
     

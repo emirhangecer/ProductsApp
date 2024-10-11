@@ -101,6 +101,7 @@
                     <navigationItem key="navigationItem" title="Ürünler" id="xVJ-Fy-K66"/>
                     <connections>
                         <outlet property="urunlerTableView" destination="wwg-wb-Hsy" id="KMf-Yo-B1M"/>
+                        <segue destination="J4Z-bV-apx" kind="show" identifier="toDetay" id="OH2-pw-NkS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -114,9 +115,35 @@
                     <view key="view" contentMode="scaleToFill" id="ASo-3z-vj3">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35000 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSg-40-Xdh">
+                                <rect key="frame" x="156.66666666666666" y="476" width="116.99999999999997" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vI-gq-FmG">
+                                <rect key="frame" x="32" y="825" width="366" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sepete Ekle"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telefon" highlightedImage="telefon" translatesAutoresizingMaskIntoConstraints="NO" id="Vt5-dg-heT">
+                                <rect key="frame" x="87" y="188" width="256" height="256"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="clB-8Z-efb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vt5-dg-heT" firstAttribute="top" secondItem="clB-8Z-efb" secondAttribute="top" constant="32" id="5EL-3m-FdP"/>
+                            <constraint firstItem="clB-8Z-efb" firstAttribute="bottom" secondItem="0vI-gq-FmG" secondAttribute="bottom" constant="32" id="9s6-XW-rtw"/>
+                            <constraint firstItem="0vI-gq-FmG" firstAttribute="leading" secondItem="clB-8Z-efb" secondAttribute="leading" constant="32" id="HOz-Le-ug2"/>
+                            <constraint firstItem="NSg-40-Xdh" firstAttribute="top" secondItem="Vt5-dg-heT" secondAttribute="bottom" constant="32" id="IBj-xv-pYf"/>
+                            <constraint firstItem="Vt5-dg-heT" firstAttribute="centerX" secondItem="ASo-3z-vj3" secondAttribute="centerX" id="g4f-Ia-1wN"/>
+                            <constraint firstItem="clB-8Z-efb" firstAttribute="trailing" secondItem="0vI-gq-FmG" secondAttribute="trailing" constant="32" id="l6s-lf-CwU"/>
+                            <constraint firstItem="NSg-40-Xdh" firstAttribute="centerX" secondItem="ASo-3z-vj3" secondAttribute="centerX" id="sws-Xb-x9H"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" customizationIdentifier="" id="I00-tg-sBu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rgp-il-F3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
