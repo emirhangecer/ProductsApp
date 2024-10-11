@@ -74,7 +74,10 @@ extension Anasayfa : UITableViewDelegate , UITableViewDataSource {
         }
         return UISwipeActionsConfiguration(actions: [silAction,duzenleAction])
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let urun = urunlerListesi[indexPath.row]
+        print("\(urun.ad!) Seçildi")
+    }
 }
 
 
