@@ -78,7 +78,15 @@ extension Anasayfa : UITableViewDelegate , UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let urun = urunlerListesi[indexPath.row]
-        print("\(urun.ad!) Seçildi")
+        performSegue(withIdentifier: "toDetay", sender: urun)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier = "toDetay" {
+            
+            if let urun = sender as? urunler {
+                
+            }
+        }
     }
 }
 
