@@ -81,7 +81,7 @@ extension Anasayfa : UITableViewDelegate , UITableViewDataSource {
         performSegue(withIdentifier: "toDetay", sender: urun)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier = "toDetay" {
+        if segue.identifier == "toDetay" {
             
             if let urun = sender as? urunler {
                 
